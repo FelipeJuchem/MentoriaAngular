@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { background-repeat: no-repeat; background-image: url('assets/images/theshire.png');
+  background-size: auto;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+hr{
+  margin-top: 50px;
+  color: gray;
+  width: 80%;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";

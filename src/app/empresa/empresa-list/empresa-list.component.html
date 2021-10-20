@@ -1,0 +1,29 @@
+<div class="box">
+  <div>
+  <button mat-raised-button (click)="navegarParaHome()">Home</button>
+  <button mat-raised-button routerLink="new">Novo</button>
+  </div>
+  <div class="tabela">
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Ramo</th>
+          <th>Dono</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of lista" >
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.nome}}</td>
+          <td>{{item.ramo}}</td>
+          <td>{{item.dono}}</td>
+          <td><a title="Alterar" class="alterar" [routerLink]="[item.id]">&#9998;</a></td>
+          <td><a title="Deletar" class="deletar" (click)="deletar(item.id)">&#10060;</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
