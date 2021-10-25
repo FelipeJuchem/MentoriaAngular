@@ -9,13 +9,32 @@
       <div class="row align-self-center" >
         <div class="col-sm my-3">
           <input matInput placeholder="Nome" type="text" formControlName="nome" class="form-control">
+            <small
+              *ngIf="form.get('nome')!.errors?.required && form?.controls!['nome'].touched"
+              class="d-block mt-2">
+              *Obrigatório!
+            </small>
           </div>
           <div class="col-sm my-3">
           <input matInput placeholder="Ramo" type="text" formControlName="ramo" class="form-control">
+            <small
+              *ngIf="form.get('ramo')!.errors?.required && form?.controls!['ramo'].touched"
+              class="d-block mt-2">
+              *Obrigatório!
+            </small>
           </div>
           <div class="col-sm my-3">
-          <input matInput placeholder="Dono" type="text" formControlName="dono" class="form-control">
+          <input matInput placeholder="Data de inicio das atividades" type="date" formControlName="inicioDasAtividades" class="form-control">
           </div>
+          <div class="col-sm-12 my-3">
+            <input matInput placeholder="CNPJ" type="text" formControlName="cnpj" class="form-control">
+            <span *ngIf="form?.controls!['cnpj']?.errors?.cnpj && form?.controls!['cnpj'].touched">CNPJ invalido</span>
+          </div>
+          <div class="col-sm-12 my-3">
+            <input matInput placeholder="CPF" type="text" formControlName="cpf" class="form-control">
+            <span *ngIf="form?.controls!['cpf']?.errors?.cpf && form?.controls!['cpf'].touched">CPF invalido</span>
+          </div>
+
         </div>
         <div class="col text-center my-3">
           <button  class="salvar" mat-raised-button type="submit">Salvar</button>

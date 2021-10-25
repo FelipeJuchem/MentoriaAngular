@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { ConteudoHomeComponent } from './home/conteudo-home/conteudo-home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SimNaoPipe } from './shared/pipes/sim-nao.pipe';
+import { CnpjPipe } from './shared/pipes/cnpj.pipe';
 
 
 
@@ -19,7 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     HomeComponent,
-    ConteudoHomeComponent,
+    ConteudoHomeComponent
 ],
   imports: [
     BrowserModule,

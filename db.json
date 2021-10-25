@@ -56,55 +56,87 @@
       "id": 1,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": true,
+      "cnpj": "10167477000110"
     },
     {
       "id": 2,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": false,
+      "cnpj": "10167477000110"
     },
     {
       "id": 3,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": false,
+      "cnpj": "10167477000110"
     },
     {
       "id": 4,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": true,
+      "cnpj": "10167477000110"
     },
     {
       "id": 5,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": true,
+      "cnpj": "10167477000110"
     },
     {
       "id": 6,
       "nome": "some comment",
       "ramo": "some comment",
-      "dono": "raul seixas"
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "ativa": false,
+      "cnpj": "10167477000110"
     },
     {
-      "nome": "some comment",
-      "ramo": "some comment",
-      "dono": "raul seixasssss",
+      "nome": "sdfsdf",
+      "ramo": "sfsdf",
+      "inicioDasAtividades": "2021-04-22T13:15:08.533Z",
+      "cpf":"69572566008",
+      "cnpj": "10167477000110",
       "id": 7
     },
     {
-      "nome": "asdas",
-      "ramo": "asdasd",
-      "dono": "asd",
+      "nome": "Felipe Vansovis Juchem",
+      "ramo": "sdafsdfsdfsd",
+      "inicioDasAtividades": "2021-09-30",
+      "cnpj": "10167477000110",
+      "cpf":"69572566008",
       "id": 8
     },
     {
-      "nome": "retertreterterte",
-      "ramo": "rtretretre",
-      "dono": "tretretretretre",
+      "nome": "asdas",
+      "ramo": "dsfsdfsdfsd",
+      "inicioDasAtividades": "2021-10-07",
+      "cnpj": "10167477000110",
+      "cpf":"69572566008",
       "id": 9
+    },
+    {
+      "nome": "asdasfdsfsdfdsfs",
+      "ramo": "asdasdasd",
+      "inicioDasAtividades": "2021-10-06",
+      "cnpj": "10167477000110",
+      "cpf":"69572566008",
+      "id": 10
     }
   ],
   "profile": {

@@ -1,3 +1,7 @@
+import { CpfPipe } from './../shared/pipes/cpf.pipe';
+import { CnpjPipe } from './../shared/pipes/cnpj.pipe';
+import { SimNaoPipe } from './../shared/pipes/sim-nao.pipe';
+import { EmpresaService } from './empresa.service';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -16,7 +20,13 @@ import { EmpresaFormularioComponent } from './empresa-formulario/empresa-formula
   ],
   declarations: [
     EmpresaListComponent,
-    EmpresaFormularioComponent
+    EmpresaFormularioComponent,
+    SimNaoPipe,
+    CnpjPipe,
+    CpfPipe
+  ],
+  providers: [
+    EmpresaService
   ]
 })
 export class EmpresaModule { }

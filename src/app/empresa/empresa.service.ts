@@ -5,9 +5,7 @@ import { Observable } from 'rxjs';
 import { Empresa } from './empresa.model'
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 
 export class EmpresaService {
 
