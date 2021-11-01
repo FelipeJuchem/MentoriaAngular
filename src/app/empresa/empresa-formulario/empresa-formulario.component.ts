@@ -1,4 +1,5 @@
-import { CnpjValidator } from 'src/app/shared/validators/cnpj.validator';
+import { CpfValidator } from 'app/shared/validators/cpf.validator';
+import { CnpjValidator } from 'app/shared/validators/cnpj.validator';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EmpresaService } from './../empresa.service';
 import { Component, OnInit } from '@angular/core';
@@ -27,9 +28,9 @@ export class EmpresaFormularioComponent implements OnInit {
     this.form = this.fb.group({
       nome: ["", [Validators.required, Validators.minLength(10)]],
       ramo: ["", Validators.required],
-      inicioDasAtividades: [Date, Validators.required],
+      inicioDasAtividades: [new Date(), Validators.required],
       cnpj: ["", [Validators.required, CnpjValidator]],
-      cpf: ["", [Validators.required]],
+      cpf: ["", [Validators.required, CpfValidator]],
       id: [null]
     });
   }

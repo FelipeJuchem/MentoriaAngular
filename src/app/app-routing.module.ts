@@ -1,6 +1,8 @@
+import { ListaComponent } from './mentoria-lista/lista/lista.component';
+import { MenuComponent } from './mentoria-lista/menu/menu.component';
 import { GameListComponent } from './game/game-list/game-list.component';
 import { HomeComponent } from './home/home.component';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GameFormularioComponent } from './game/game-formulario/game-formulario.component';
 import { EmpresaListComponent } from './empresa/empresa-list/empresa-list.component';
@@ -44,8 +46,21 @@ const routes: Routes = [
         component: EmpresaFormularioComponent
       }
     ]
+  },
+  {
+    path: "menu-lista",
+    children: [
+      {
+        path:"",
+        component: MenuComponent
+      },
+      {
+        path:"",
+        component: ListaComponent
+      }
+    ]
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

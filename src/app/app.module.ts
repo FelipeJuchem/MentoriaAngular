@@ -1,3 +1,4 @@
+import { MentoriaListaModule } from './mentoria-lista/mentoria-lista.module';
 import { EmpresaModule } from './empresa/empresa.module';
 import { RouterModule } from '@angular/router';
 import { GameModule } from './game/game.module';
@@ -12,8 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ConteudoHomeComponent } from './home/conteudo-home/conteudo-home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SimNaoPipe } from './shared/pipes/sim-nao.pipe';
-import { CnpjPipe } from './shared/pipes/cnpj.pipe';
+
 
 
 
@@ -22,7 +22,7 @@ import { CnpjPipe } from './shared/pipes/cnpj.pipe';
     AppComponent,
     HomeComponent,
     ConteudoHomeComponent
-],
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,7 +32,8 @@ import { CnpjPipe } from './shared/pipes/cnpj.pipe';
     MatButtonModule,
     GameModule,
     RouterModule,
-    EmpresaModule
+    EmpresaModule,
+    MentoriaListaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,41 @@
+.box{
+  border-color: black;
+  border-style: solid;
+}
+
+.tabela {
+  width: 500px;
+  padding: 50px;
+}
+
+button {
+  width: 50px;
+  margin: 50px;
+  margin-top: 50px;
+  border: grey;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+button:active {
+  color: blue;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.selecionado {
+  background-color: blue;
+}
+
+
+
+

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-10 col-2 my-5">
+        <button mat-raised-button (click)="ngOnInit()">Reset</button>
+     </div>
+   </div>
+   <div class="row">
+    <div class="col-5 box text-center">
+      <app-lista
+      [lista]="lista1"></app-lista>
+    </div>
+    <div class="col-1">
+      <button mat-raised-button title="Passar item selecionado" class="my-3 mt-5" (click)="adicionarLista2()">></button>
+      <button mat-raised-button title="Passar toda a lista" class="my-3" (click)="passarLista1ParaLista2()">>></button>
+      <button mat-raised-button title="Retornar item selecionado" class="my-3" (click)="adicionarLista1()"><</button>
+      <button mat-raised-button title="Retornar toda a lista" class="my-3" (click)="passarLista2ParaLista1()"><<</button>
+    </div>
+    <div class="col-5 box">
+      <app-lista
+      [lista]="lista2"></app-lista>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-5 tamanhoLista mt-3">
+      <span class="badge badge-primary tamanho-lista-numeros">Items: {{lista1.length}}</span>
+    </div>
+    <div class="col-1">
+
+    </div>
+    <div class="col-5 tamanhoLista mt-3 ">
+      <span class="badge badge-primary tamanho-lista-numeros">Items: {{lista2.length}}</span>
+    </div>
+   </div>
+</div>
+
+
+
+

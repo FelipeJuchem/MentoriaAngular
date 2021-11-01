@@ -1,5 +1,5 @@
-export interface Game {
-  id:     number;
-  title:  string;
-  author: string;
+export class Game {
+  id!:     number;
+  title!:  string;
+  author!: string;
 }
